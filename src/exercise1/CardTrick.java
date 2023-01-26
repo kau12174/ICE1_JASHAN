@@ -7,7 +7,7 @@ package exercise1;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 25, 2022 
- modifier  jashan
+ modifier  jashan   branch code
  fetch+merge
  */
 public class CardTrick {
