@@ -7,6 +7,7 @@ package exercise1;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 25, 2022 
+ modifier  jashan
  */
 public class CardTrick {
     
@@ -22,7 +23,7 @@ public class CardTrick {
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
             
-            // -------
+            // ---------
         }
 
         // insert code to ask the user for Card value and suit, create their card
