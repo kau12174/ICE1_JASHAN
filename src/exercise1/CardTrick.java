@@ -10,31 +10,70 @@ package exercise1;
  modifier  jashan   branch code  netbeans
  fetch+merge
  */
+
+import java.util.Scanner;
 public class CardTrick {
     
     public static void main(String[] args) {
         
         Card[] hand = new Card[7];
-
+        
+      Scanner s1=new Scanner(System.in);
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
             //card.setValue(insert call to random number generator here)
-            // 
+                card.setValue((int)(1+(Math.random()*13)));
+    // 
             //card.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-            // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
+             card.setSuit(Card.SUITS[(int)(1+(Math.random()*3))]);
+             
+             hand[i]=card;
+  // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
             
             // ---------
         }
-
+        
+        
+System.out.println("Enter the value you guessed of card from 1 to 13  ");
+        int value=s1.nextInt();
+        
+        System.out.println("Enter the value you guessed of suit  from 1 to 4  ");
+        int suit=s1.nextInt();
         // insert code to ask the user for Card value and suit, create their card
         // and search the hand here. 
         // Hint: You can ask for values 1 to 10, and then
         //       11 for jack, 12 for queen, etc. (remember arrays are 0-based though)
         //       1 for Hearts, 2 for Diamonds, etc. (remember arrays are 0-based though)
         // 
+        
+        Card a1=new Card();
+        a1.setValue(value);
+        a1.setSuit(Card.SUITS[3]);
+        
         // Then loop through the cards in the array to see if there's a match.
         
+        
+        
+        
+          // If the guess is successful, invoke the printInfo() method 
+        boolean b1=false;
+        for(int i=0; i<hand.length; i++)
+        {
+            if((hand[i].getValue()== a1.getValue()) && (hand[i].getSuit()== a1.getSuit())){
+                b1=true;
+            
+                printInfo();
+                break;
+            }
+            
+           
+        }
+         if(!b1){
+                System.out.println("Sorry Try Again");
+            }
+        
+       
         // If the guess is successful, invoke the printInfo() method below.
         
     }
