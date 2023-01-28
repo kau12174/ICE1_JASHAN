@@ -85,7 +85,7 @@ System.out.println("Enter the value you guessed of card from 1 to 13  ");
      */
     
     
-    // "I AM DONE!!!"
+    // "I AM DONE !!!!!"
     private static void printInfo() {
     
         System.out.println("Congratulations,your guess was right!");
