@@ -94,15 +94,15 @@ System.out.println("Enter the value you guessed of card from 1 to 13  ");
         System.out.println("My name is JASHANPREET KAUR, but you can call me jashan ");
         System.out.println();
         
-        System.out.println("My career ambitions:");
+        System.out.println("My career ambitions are as follows:");
         System.out.println("-- To do my best to achieve my aim");
-        System.out.println("-- Have a semester with no violations of academic integrity!");
+        System.out.println("-- Have the semester with no violations of academic integrity!");
 	System.out.println();	
 
         System.out.println("My hobbies:");
-        System.out.println("-- Listening Music");
-        System.out.println("-- Cooking");
-        System.out.println("-- Watching TV");
+        System.out.println("-- to listen Music");
+        System.out.println("-- Cooking food");
+        System.out.println("-- Watching TV shows");
         System.out.println("-- Driving");
 
         System.out.println();
